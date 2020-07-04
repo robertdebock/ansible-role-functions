@@ -1,0 +1,6 @@
+---
+- name: test if functions_string is set correctly
+  assert:
+    that:
+      - functions_string is defined
+    quiet: yes

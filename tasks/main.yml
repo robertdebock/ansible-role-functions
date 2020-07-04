@@ -1,0 +1,56 @@
+---
+# tasks file for functions
+- name: include assert.yml
+  include_tasks: assert.yml
+
+- name: capitalize
+  debug:
+    msg: "{{ functions_string | capitalize }}"
+
+- name: indent
+  debug:
+    msg: "{{ functions_string | indent }}"
+
+- name: list
+  debug:
+    msg: "{{ functions_string | list }}"
+
+- name: lower
+  debug:
+    msg: "{{ functions_string | lower }}"
+
+- name: replace
+  debug:
+    msg: "{{ functions_string | replace('old', 'new') }}"
+
+- name: reverse
+  debug:
+    msg: "{{ functions_string | reverse }}"
+
+- name: string
+  debug:
+    msg: "{{ functions_string | string }}"
+
+- name: trim
+  debug:
+    msg: "{{ functions_string | trim }}"
+
+- name: truncate
+  debug:
+    msg: "{{ functions_string | truncate(5) }}"
+
+- name: upper
+  debug:
+    msg: "{{ functions_string | upper }}"
+
+- name: wordcount
+  debug:
+    msg: "{{ functions_string | wordcount }}"
+
+- name: wordwrap
+  debug:
+    msg: "{{ functions_string | wordwrap(5) }}"
+
+- name: comment
+  debug:
+    msg: "{{ functions_string | comment }}"

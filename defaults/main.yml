@@ -1,0 +1,3 @@
+---
+# defaults file for functions
+functions_string: "This line with CAPITALS and integers: 1 2 3. New and old."

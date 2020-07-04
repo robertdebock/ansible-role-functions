@@ -1,0 +1,44 @@
+---
+#
+# Ansible managed
+#
+language: python
+
+python:
+  - "3.8"
+
+services:
+  - docker
+
+env:
+  global:
+    namespace="robertdebock"
+  matrix:
+    - image="alpine" tag="latest"
+    - image="alpine" tag="edge"
+    - image="debian" tag="latest"
+    - image="debian" tag="bullseye"
+    - image="centos" tag="7"
+    - image="centos" tag="latest"
+    - image="fedora" tag="31"
+    - image="fedora" tag="latest"
+    - image="fedora" tag="rawhide"
+    - image="opensuse" tag="latest"
+    - image="ubuntu" tag="latest"
+    - image="ubuntu" tag="bionic"
+    - image="ubuntu" tag="xenial"
+
+cache:
+  - pip
+
+install:
+  - pip install --upgrade pip
+  - pip install tox
+
+script:
+  - n=0 ; until [ "$n" = 3 ] ; do tox && break ; n=$((n+1)) ; done
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  slack: "PiyB1/8TLcA4QINgS6SNT/ZQRl8guMD2w0fe8B3TK0nPpU5xgWUookZkOkS9LpuXM2y5GO44bHPG0VM3R472+bIMpSnrDQQp/UynobI+zm0dyNydp94X6K6jZl9c5n4O23ucozzZfb6nmiqOzn9MYQ6FGA29tOC/BSLv0B1OIfvDt8rLUkDuNbgIrFa26iR+U/0dYkI4QD6FuhNctMxldjhPV7/SlmDfZZCa89xxgUZDXyoKTSWWKBtDYspwFy1Y5DGzfC87N76NzQyPEpXHclULq2C57Yx9DixGLrWTCXeK1JmpW+6q3wWUocLG7khH9y+Abmba0AV3DuLlzFOjwL1gucWk/2bc+rUGa7f10+YuUUtJy3iZp/UyrfYFPUQX+EcaJkBPeZSE2ZGs3Q7fZ97wa9n2UTx5JSqh7Pw7Bzcg+6+RDvY21j9DZmVUkIrKIXa059XJ2cWFMji/VVPp4JnBYKT7lP3KEBb+lInS1cojAb17w6xf5l0fCSNiT/0Fv+k76x17ONqdCR2vARr3Cx0leCQNi3hLfZCzmqWISy/zNWqp0HnIdEVe2cdsVky9Qlx/7QLUxcoREy7FzeINLmnCSyZGdeIGUZJ96FY86eU7sY2Qhog8O0zfi+/z0Qsad9wFPolTo+EitAj3y+ofS2zzkjEvRGrWdH9OLvZf+k0="
+  email: false

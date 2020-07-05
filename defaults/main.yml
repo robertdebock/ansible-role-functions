@@ -1,3 +1,14 @@
 ---
 # defaults file for functions
-functions_string: "This line with CAPITALS and integers: 1 2 3. New and old."
+functions_strings:
+  - "A regular line."
+  - "CAPITALS ONLY"
+  - "lowercase only"
+  - " Extra spaces. "
+  - "A line with the word new and old."
+  - "A line with integers. 1, 2 & 3."
+
+functions_integers:
+  - 0
+  - 1
+  - 2.0

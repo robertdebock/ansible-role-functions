@@ -52,7 +52,18 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for functions
-functions_string: "This line with CAPITALS and integers: 1 2 3"
+functions_strings:
+  - "A regular line."
+  - "CAPITALS ONLY"
+  - "lowercase only"
+  - " Extra spaces. "
+  - "A line with the word new and old."
+  - "A line with integers. 1, 2 & 3."
+
+functions_integers:
+  - 0
+  - 1
+  - 2.0
 ```
 
 ## [Requirements](#requirements)

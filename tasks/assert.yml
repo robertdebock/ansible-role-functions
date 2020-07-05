@@ -1,6 +1,8 @@
 ---
-- name: test if functions_string is set correctly
+- name: test if functions_strings is set correctly
   assert:
     that:
-      - functions_string is defined
+      - functions_strings is defined
+      - functions_strings | length > 0
+      - functions_strings is iterable
     quiet: yes

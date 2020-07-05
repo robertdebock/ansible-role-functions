@@ -5,52 +5,65 @@
 
 - name: capitalize
   debug:
-    msg: "{{ functions_string | capitalize }}"
+    msg: "{{ item | capitalize }}"
+  loop: "{{ functions_strings }}"
 
 - name: indent
   debug:
-    msg: "{{ functions_string | indent }}"
+    msg: "{{ item | indent }}"
+  loop: "{{ functions_strings }}"
 
 - name: list
   debug:
-    msg: "{{ functions_string | list }}"
+    msg: "{{ item | list }}"
+  loop: "{{ functions_strings }}"
 
 - name: lower
   debug:
-    msg: "{{ functions_string | lower }}"
+    msg: "{{ item | lower }}"
+  loop: "{{ functions_strings }}"
 
 - name: replace
   debug:
-    msg: "{{ functions_string | replace('old', 'new') }}"
+    msg: "{{ item | replace('old', 'new') }}"
+  loop: "{{ functions_strings }}"
 
 - name: reverse
   debug:
-    msg: "{{ functions_string | reverse }}"
+    msg: "{{ item | reverse }}"
+  loop: "{{ functions_strings }}"
 
 - name: string
   debug:
-    msg: "{{ functions_string | string }}"
+    msg: "{{ item | string }}"
+  loop: "{{ functions_strings }}"
 
 - name: trim
   debug:
-    msg: "{{ functions_string | trim }}"
+    msg: "{{ item | trim }}"
+  loop: "{{ functions_strings }}"
 
 - name: truncate
   debug:
-    msg: "{{ functions_string | truncate(5) }}"
+    msg: "{{ item | truncate(5) }}"
+  loop: "{{ functions_strings }}"
 
 - name: upper
   debug:
-    msg: "{{ functions_string | upper }}"
+    msg: "{{ item | upper }}"
+  loop: "{{ functions_strings }}"
 
 - name: wordcount
   debug:
-    msg: "{{ functions_string | wordcount }}"
+    msg: "{{ item | wordcount }}"
+  loop: "{{ functions_strings }}"
 
 - name: wordwrap
   debug:
-    msg: "{{ functions_string | wordwrap(5) }}"
+    msg: "{{ item | wordwrap(5) }}"
+  loop: "{{ functions_strings }}"
 
 - name: comment
   debug:
-    msg: "{{ functions_string | comment }}"
+    msg: "{{ item | comment }}"
+  loop: "{{ functions_strings }}"

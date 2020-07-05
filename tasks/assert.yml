@@ -6,3 +6,11 @@
       - functions_strings | length > 0
       - functions_strings is iterable
     quiet: yes
+
+- name: test if functions_integers is set correctly
+  assert:
+    that:
+      - functions_integers is defined
+      - functions_integers | length > 0
+      - functions_integers is iterable
+    quiet: yes

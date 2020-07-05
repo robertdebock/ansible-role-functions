@@ -4,7 +4,7 @@ Try all kinds of functions.
 
 |Travis|GitHub|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-functions.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-functions)|[![github](https://github.com/robertdebock/ansible-role-functions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-functions/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/functions)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/functions)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-functions.svg)](https://github.com/robertdebock/ansible-role-functions/releases/)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-functions.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-functions)|[![github](https://github.com/robertdebock/ansible-role-functions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-functions/actions)|[![quality](https://img.shields.io/ansible/quality/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![downloads](https://img.shields.io/ansible/role/d/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-functions.svg)](https://github.com/robertdebock/ansible-role-functions/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -17,7 +17,8 @@ This example is taken from `molecule/resources/converge.yml` and is tested on ea
   gather_facts: yes
 
   roles:
-    - role: robertdebock.functions```
+    - role: robertdebock.functions
+```
 
 The machine may need to be prepared using `molecule/resources/prepare.yml`:
 ```yaml
@@ -63,6 +64,9 @@ functions_strings:
 functions_integers:
   - 0
   - 1
+  - 1.4
+  - 1.5
+  - 1.6
   - 2.0
 ```
 

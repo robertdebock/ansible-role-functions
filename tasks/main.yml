@@ -3,67 +3,102 @@
 - name: include assert.yml
   include_tasks: assert.yml
 
-- name: capitalize
+- name: no function on strings
+  debug:
+    msg: "{{ item }}"
+  loop: "{{ functions_strings }}"
+
+- name: capitalize strings
   debug:
     msg: "{{ item | capitalize }}"
   loop: "{{ functions_strings }}"
 
-- name: indent
+- name: indent strings
   debug:
     msg: "{{ item | indent }}"
   loop: "{{ functions_strings }}"
 
-- name: list
+- name: list strings
   debug:
     msg: "{{ item | list }}"
   loop: "{{ functions_strings }}"
 
-- name: lower
+- name: lower strings
   debug:
     msg: "{{ item | lower }}"
   loop: "{{ functions_strings }}"
 
-- name: replace
+- name: replace strings
   debug:
     msg: "{{ item | replace('old', 'new') }}"
   loop: "{{ functions_strings }}"
 
-- name: reverse
+- name: reverse strings
   debug:
     msg: "{{ item | reverse }}"
   loop: "{{ functions_strings }}"
 
-- name: string
+- name: string strings
   debug:
     msg: "{{ item | string }}"
   loop: "{{ functions_strings }}"
 
-- name: trim
+- name: trim strings
   debug:
     msg: "{{ item | trim }}"
   loop: "{{ functions_strings }}"
 
-- name: truncate
+- name: truncate strings
   debug:
     msg: "{{ item | truncate(5) }}"
   loop: "{{ functions_strings }}"
 
-- name: upper
+- name: upper strings
   debug:
     msg: "{{ item | upper }}"
   loop: "{{ functions_strings }}"
 
-- name: wordcount
+- name: wordcount strings
   debug:
     msg: "{{ item | wordcount }}"
   loop: "{{ functions_strings }}"
 
-- name: wordwrap
+- name: wordwrap strings
   debug:
     msg: "{{ item | wordwrap(5) }}"
   loop: "{{ functions_strings }}"
 
-- name: comment
+- name: comment strings
   debug:
     msg: "{{ item | comment }}"
   loop: "{{ functions_strings }}"
+
+- name: abs integers
+  debug:
+    msg: "{{ item | abs }}"
+  loop: "{{ functions_integers }}"
+
+- name: float integers
+  debug:
+    msg: "{{ item | float }}"
+  loop: "{{ functions_integers }}"
+
+- name: int integers
+  debug:
+    msg: "{{ item | int }}"
+  loop: "{{ functions_integers }}"
+
+- name: round integers
+  debug:
+    msg: "{{ item | round }}"
+  loop: "{{ functions_integers }}"
+
+- name: pow(2) integers
+  debug:
+    msg: "{{ item | pow(2) }}"
+  loop: "{{ functions_integers }}"
+
+- name: root integers
+  debug:
+    msg: "{{ item | root }}"
+  loop: "{{ functions_integers }}"

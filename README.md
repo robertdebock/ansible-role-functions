@@ -53,6 +53,7 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for functions
+
 functions_strings:
   - "A regular line."
   - "CAPITALS ONLY"

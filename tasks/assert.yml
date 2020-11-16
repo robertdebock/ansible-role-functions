@@ -3,7 +3,6 @@
   assert:
     that:
       - functions_strings is defined
-      - functions_strings | length > 0
       - functions_strings is iterable
     quiet: yes
 
@@ -11,6 +10,5 @@
   assert:
     that:
       - functions_integers is defined
-      - functions_integers | length > 0
       - functions_integers is iterable
     quiet: yes

@@ -1,4 +1,5 @@
 ---
+
 - name: test if functions_strings is set correctly
   assert:
     that:

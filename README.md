@@ -2,9 +2,9 @@
 
 Try all kinds of functions.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-functions.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-functions)|[![github](https://github.com/robertdebock/ansible-role-functions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-functions/actions)|[![quality](https://img.shields.io/ansible/quality/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![downloads](https://img.shields.io/ansible/role/d/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-functions.svg)](https://github.com/robertdebock/ansible-role-functions/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-functions.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-functions)|[![github](https://github.com/robertdebock/ansible-role-functions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-functions/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-functions/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-functions)|[![quality](https://img.shields.io/ansible/quality/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![downloads](https://img.shields.io/ansible/role/d/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-functions.svg)](https://github.com/robertdebock/ansible-role-functions/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -135,10 +135,6 @@ image="debian" tag="stable" tox
 ## [License](#license)
 
 Apache-2.0
-
-## [Contributors](#contributors)
-
-I'd like to thank everybody that made contributions to this repository. It motivates me, improves the code and is just fun to collaborate.
 
 
 ## [Author Information](#author-information)

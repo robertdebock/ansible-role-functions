@@ -5,4 +5,4 @@
 repository:
   description: Try all kinds of functions.
   homepage: https://robertdebock.nl/
-  topics: functions, ansible, molecule, tox, playbook, hacktoberfest
+  topics: functions, ansible, molecule, tox, playbook

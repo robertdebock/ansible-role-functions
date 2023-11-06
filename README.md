@@ -2,9 +2,9 @@
 
 Try all kinds of functions.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-functions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-functions/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-functions/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-functions)|[![quality](https://img.shields.io/ansible/quality/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![downloads](https://img.shields.io/ansible/role/d/49599)](https://galaxy.ansible.com/robertdebock/functions)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-functions.svg)](https://github.com/robertdebock/ansible-role-functions/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-functions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-functions/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-functions/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-functions)|[![downloads](https://img.shields.io/ansible/role/d/24499)](https://galaxy.ansible.com/robertdebock/functions)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-functions.svg)](https://github.com/robertdebock/ansible-role-functions/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -100,7 +100,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-functions/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-functions/issues).
 
 ## [License](#license)
 

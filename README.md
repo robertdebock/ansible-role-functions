@@ -1,4 +1,4 @@
-# Ansible role [functions](#functions)
+# [Ansible role functions](#functions)
 
 Try all kinds of functions.
 
